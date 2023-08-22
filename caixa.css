@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.atm {
+  height: 450px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: lightgray;
+}
+
+.display {
+  width: 475px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 4px auto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  background-color: rgb(234, 234, 234);
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  height: 25px;
+  font-size: 16px;
+}
+
+.buttons {
+  width: 475px;
+  height: 300px;
+  margin: 0px auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(160, 158, 158);
+}
+
+.service {
+  height: 50px;
+  width: 31%;
+  font-weight: bold;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.numbers,
+.null {
+  height: 40px;
+  width: 20%;
+  margin-left: 8px;
+  background-color: gray;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.action {
+  height: 40px;
+  width: 31%;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.null {
+  cursor: auto;
+}
+
+.service:hover,
+.action:hover {
+  background-color: grey;
+  color: white;
+}
+
+.numbers:hover {
+  background-color: white;
+  color: black;
+}

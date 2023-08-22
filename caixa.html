@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caixa Eletronico</title>
+    <link rel="stylesheet" href="caixa.css" />
+    <script src="caixa.js"></script>
+  </head>
+  <body>
+    <!--
+    Exercício caixa eletrônico
+    Crie um layout para um caixa eletrônico
+    Deve ter:
+    - botões para os números (x)
+    - um botão para mostrar o saldo (x)
+    - um botão para adicionar dinheiro (x)
+    - um botão para sacar dinheiro (x)
+    - os botões Enter, Corrigir, e Cancelar. (x)
+    - Deve iniciar mostrando uma msg para o usuário realizar uma das ações possíveis 
+        (visualizar saldo, add dinheiro ou sac dinheiro) (x)
+    - Ao clicar no botão de saldo, deve mostrar o saldo
+    - Ao clicar em adicionar, deve solicitar que o usuário digite o valor e clicar em Enter 
+        para add
+    - Ao clicar em sacar, deve pedir para o usuário digitar o valor e clicar em Enter para sub
+    - Antes de sacar, deve verificar se o usuário possui saldo suficiente, se não possuir, 
+        deve mostrar uma mensagem e solicitar um valor menor que o saldo.
+    - Ao clicar em Corrigir, deve voltar o último número digitado.
+    - Ao clicar em Cancelar deve anular e voltar para msg inicial.
+    - O saldo inicial deve ser de R$10000.00
+ -->
+
+    <div class="atm">
+      <div class="display">Qual ação deseja realizar?</div>
+      <div class="buttons">
+        <button class="service" onclick="saldo()">Saldo</button>
+        <button class="service" onclick="deposit()">Depósito</button>
+        <button class="service" onclick="saque()">Saque</button>
+        <button class="numbers" onclick="valor('7')">7</button>
+        <button class="numbers" onclick="valor('8')">8</button>
+        <button class="numbers" onclick="valor('9')">9</button>
+        <button class="action" onclick="corrigir()">Corrigir</button>
+        <button class="numbers" onclick="valor('4')">4</button>
+        <button class="numbers" onclick="valor('5')">5</button>
+        <button class="numbers" onclick="valor('6')">6</button>
+        <button class="action" onclick="cancel()">Anular</button>
+        <button class="numbers" onclick="valor('1')">1</button>
+        <button class="numbers" onclick="valor('2')">2</button>
+        <button class="numbers" onclick="valor('3')">3</button>
+        <button class="action" onclick="cancel()">Cancelar</button>
+        <button class="null"></button>
+        <button class="numbers" onclick="valor('0')">0</button>
+        <button class="numbers" onclick="valor('.')">.</button>
+        <button class="action">Enter</button>
+      </div>
+    </div>
+  </body>
+</html>
