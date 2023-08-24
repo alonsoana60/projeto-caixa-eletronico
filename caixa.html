@@ -8,30 +8,12 @@
     <script src="caixa.js"></script>
   </head>
   <body>
-    <!--
-    Exercício caixa eletrônico
-    Crie um layout para um caixa eletrônico
-    Deve ter:
-    - botões para os números (x)
-    - um botão para mostrar o saldo (x)
-    - um botão para adicionar dinheiro (x)
-    - um botão para sacar dinheiro (x)
-    - os botões Enter, Corrigir, e Cancelar. (x)
-    - Deve iniciar mostrando uma msg para o usuário realizar uma das ações possíveis 
-        (visualizar saldo, add dinheiro ou sac dinheiro) (x)
-    - Ao clicar no botão de saldo, deve mostrar o saldo
-    - Ao clicar em adicionar, deve solicitar que o usuário digite o valor e clicar em Enter 
-        para add
-    - Ao clicar em sacar, deve pedir para o usuário digitar o valor e clicar em Enter para sub
-    - Antes de sacar, deve verificar se o usuário possui saldo suficiente, se não possuir, 
-        deve mostrar uma mensagem e solicitar um valor menor que o saldo.
-    - Ao clicar em Corrigir, deve voltar o último número digitado.
-    - Ao clicar em Cancelar deve anular e voltar para msg inicial.
-    - O saldo inicial deve ser de R$10000.00
- -->
-
     <div class="atm">
-      <div class="display">Qual ação deseja realizar?</div>
+      <div class="display">
+        <h2>Qual ação deseja realizar?</h2>
+        <h3></h3>
+        <h4></h4>
+      </div>
       <div class="buttons">
         <button class="service" onclick="saldo()">Saldo</button>
         <button class="service" onclick="deposit()">Depósito</button>
@@ -51,7 +33,7 @@
         <button class="null"></button>
         <button class="numbers" onclick="valor('0')">0</button>
         <button class="numbers" onclick="valor('.')">.</button>
-        <button class="action">Enter</button>
+        <button class="action" onclick="result()">Enter</button>
       </div>
     </div>
   </body>

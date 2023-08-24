@@ -1,0 +1,16 @@
+{
+  "name": "caixa-eletronico---html-e-js",
+  "version": "1.0.0",
+  "description": "Criando tela de caixa eletronico com html, css e js",
+  "main": "caixa.js",
+  "scripts": {
+   "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
